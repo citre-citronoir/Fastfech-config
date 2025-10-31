@@ -1,0 +1,150 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "auto",
+    "height": 16,
+    "width": 30,
+    "padding": {
+      "top": 5,
+      "left": 2,
+    },
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "format": "\u001b[90m┌─────────────────────────── Users ──────────────────────────┐",
+    },
+    {
+      "type": "title",
+      "key": " User ",
+      "keyColor": "white",
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[90m└─────────────────────────────────────────────────────────────────┘",
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[91m┌─────────────────────────── Hardware ──────────────────────────┐",
+    },
+    {
+      "type": "board",
+      "key": " Ivan",
+      "keyColor": "red",
+    },
+    {
+      "type": "bios",
+      "key": "│ ├ bios ",
+      "keyColor": "red",
+    },
+    {
+      "type": "cpu",
+      "key": "│ ├ cpu ",
+      "keyColor": "red",
+    },
+    {
+      "type": "gpu",
+      "key": "│ ├ gpu ",
+      "keyColor": "red",
+    },
+    {
+      "type": "physicaldisk",
+      "key": "│ ├ disk ",
+      "keyColor": "red",
+    },
+    {
+      "type": "chassis",
+      "key": "│ └ chassis",
+      "keyColor": "red",
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[91m└─────────────────────────────────────────────────────────────────┘",
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[93m┌─────────────────────────── System ──────────────────────────┐",
+    },
+    {
+      "type": "os",
+      "key": " Os",
+      "keyColor": "yellow",
+      "format": "{name}",
+    },
+    {
+      "type": "command",
+      "key": "│ ├ Os Age ",
+      "keyColor": "yellow",
+      "keyWidth": 12,
+      "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days",
+    },
+    {
+      "type": "kernel",
+      "key": "│ ├ kernel ",
+      "keyColor": "yellow",
+    },
+    {
+      "type": "packages",
+      "key": "│ ├ packages",
+      "keyColor": "yellow",
+    },
+    {
+      "type": "uptime",
+      "key": "│ ├ uptime ",
+      "keyColor": "yellow",
+    },
+    {
+      "type": "cpuusage",
+      "key": "│ ├ cpu usage ",
+      "keyColor": "yellow",
+    },
+    {
+      "type": "memory",
+      "key": "│ ├ memory ",
+      "keyColor": "yellow",
+    },
+    {
+      "type": "datetime",
+      "key": "│ └ date time ",
+      "keyColor": "yellow",
+    },
+
+    {
+      "type": "custom",
+      "format": "\u001b[92m└─────────────────────────────────────────────────────────────────┘",
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[94m┌─────────────────────────── Software ──────────────────────────┐",
+    },
+    {
+      "type": "de",
+      "key": " Desktop",
+      "keyColor": "blue",
+    },
+    {
+      "type": "shell",
+      "key": "│ ├ shell ",
+      "keyColor": "blue",
+    },
+    {
+      "type": "editor",
+      "key": "│ ├ editor ",
+      "keyColor": "blue",
+    },
+    {
+      "type": "processes",
+      "key": "│ ├ processes ",
+      "keyColor": "blue",
+    },
+    {
+      "type": "terminal",
+      "key": "│ └ terminal",
+      "keyColor": "blue",
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[94m└─────────────────────────────────────────────────────────────────┘",
+    },
+  ],
+}
